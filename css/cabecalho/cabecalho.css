@@ -1,0 +1,100 @@
+.cabecalho{
+    background-color: var(--cor-p1);
+    padding: 12px;
+}
+
+.cabecalho__bloco{
+    max-width: 1160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+.cabecalho__btn--menu--mobile{
+    border: none;
+    background-color: inherit;
+    display: flex;
+    cursor: pointer;
+}
+
+.cabecalho__btn--menu--mobile::before{
+    content: '';
+    display: inline-block;
+    background-image: url('../../assets/img_ot/icones/menu-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.cabecalho__lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.cabecalho__link{
+    padding: 8px 0;
+}
+
+.cabecalho__btn--tema{
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cabecalho__btn--tema--before::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../assets/img_ot/icones/moon-stars-fill.svg");
+}
+
+/* Media Query */
+
+@media(max-width: 750px){
+    .cabecalho__menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho__btn--menu--mobile{
+        position: relative;
+    }
+
+    .cabecalho__lista{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 4px;
+        padding: 12px;
+        border-radius: 10px;
+        background-color: var(--cor-p2);
+    }
+    
+
+   .cabecalho__btn--tema{
+       display: none;
+    }
+}
+
+/* classes add via js */
+
+.is-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho__btn--tema.is-flex{
+    flex-direction: row;
+    
+}

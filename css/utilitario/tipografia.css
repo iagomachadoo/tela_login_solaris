@@ -1,0 +1,32 @@
+:root{
+    --fonte-padrao: 'Open Sans', sans-serif;
+}
+
+.fonte-l{
+    font: 700 2rem var(--fonte-padrao);
+}
+
+.fonte-m{
+    font: 400 1.25rem/1.25 var(--fonte-padrao);
+}
+
+.fonte-s{
+    font: 700 1rem/1.25 var(--fonte-padrao);
+}
+
+.fonte-s-a{
+    font: 400 1rem/1.25 var(--fonte-padrao);
+}
+
+.fonte-s-up{
+    font: 400 1rem/1.25 var(--fonte-padrao);
+    text-transform: uppercase;
+}
+
+.fonte-xs{
+    font: 700 .75rem/1.25 var(--fonte-padrao);
+}
+
+.fonte-xs-a{
+    font: 400 .75rem/1.25 var(--fonte-padrao);
+}

@@ -1,0 +1,6 @@
+@import "./reset/reset.css";
+
+@import "./utilitario/tipografia.css";
+@import "./utilitario/cor.css";
+
+@import "./cabecalho/cabecalho.css";
