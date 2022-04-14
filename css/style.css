@@ -4,3 +4,7 @@
 @import "./utilitario/cor.css";
 
 @import "./cabecalho/cabecalho.css";
+
+@import "./conteudo/conteudo.css";
+@import "./conteudo/conteudo__info/conteudo__info.css";
+@import "./conteudo/conteudo__ilustracao/conteudo__ilustacao.css";
