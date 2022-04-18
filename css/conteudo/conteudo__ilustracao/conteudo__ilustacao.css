@@ -1,3 +1,15 @@
 .conteudo__ilustracao{
     background-color: var(--cor-t2);
+    padding: 0 12px;
+}
+
+.conteudo__img{
+    margin: 60px auto 12px auto;
+    width: 600px;
+}
+
+.conteudo__texto{
+    text-align: center;
+    margin: auto;
+    max-width: 60ch;
 }

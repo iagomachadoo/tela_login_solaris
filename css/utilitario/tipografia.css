@@ -18,11 +18,6 @@
     font: 400 1rem/1.25 var(--fonte-padrao);
 }
 
-.fonte-s-up{
-    font: 400 1rem/1.25 var(--fonte-padrao);
-    text-transform: uppercase;
-}
-
 .fonte-xs{
     font: 700 .75rem/1.25 var(--fonte-padrao);
 }
