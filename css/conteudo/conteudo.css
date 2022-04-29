@@ -1,4 +1,13 @@
 .conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: var(--cor-t1);
+}
+
+@media(max-width: 800px){
+    .conteudo{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }

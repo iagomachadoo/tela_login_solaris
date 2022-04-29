@@ -1,6 +1,6 @@
 .conteudo__info{
-    background-color: var(--cor-t1);
     height: 100vh;
+    padding: 0 12px;
 }
 
 .conteudo__form{
@@ -52,6 +52,39 @@
     padding: 4px 12px;
     border: 1px solid var(--cor-p3);
     border-radius: 10px;
+    background-color: inherit;
+}
+
+.conteudo__block-senha{
+    width: 100%;
+    height: 36px;
+    border: 1px solid var(--cor-p3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 20px;
+}
+
+.is-focus:focus-within{
+    outline: 1px solid black;
+    border-color: black;
+}
+
+.conteudo__input-senha{
+    width: 100%;
+    height: 100%;
+    padding: 4px 12px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: inherit;
+    outline: none;
+}
+
+.conteudo__input-img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
 .conteudo__lembrar--senha{
@@ -74,4 +107,16 @@
     border-radius: 10px;
     padding: 8px 24px;
     cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .conteudo__info{
+        height: initial;
+        margin-bottom: 20px;
+    }
+
+    .conteudo__form{
+        padding: 32px;
+        margin: 0 auto;
+    }
 }

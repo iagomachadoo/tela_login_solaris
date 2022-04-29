@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/menu_mobile.js" defer></script>
+    <script src="js/mostrar_senha.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -51,7 +52,13 @@
                 <div class="conteudo__senha">
                     <label for="senha" class="conteudo__label fonte-s-a cor-p6">Senha<span class="cor-p5">*</span></label>
 
-                    <input type="password" name="senha" id="senha" class="conteudo__input fonte-s-a cor-p6">
+                    <div class="conteudo__block-senha is-focus">
+                        <input type="password" name="senha" id="senha" class="conteudo__input-senha fonte-s-a cor-p6">
+
+                        <span class="conteudo__block-img">
+                            <img src="./assets/img_ot/icones/eye-slash-fill.svg" class="conteudo__input-img" alt="">
+                        </span>
+                    </div>
                 </div>
 
                 <div class="conteudo__lembrar--senha">

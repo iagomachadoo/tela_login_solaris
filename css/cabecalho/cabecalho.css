@@ -57,6 +57,9 @@
     width: 16px;
     height: 16px;
     background-image: url("../../assets/img_ot/icones/moon-stars-fill.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Media Query */

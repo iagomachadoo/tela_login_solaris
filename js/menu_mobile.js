@@ -55,7 +55,9 @@ if(tamanhoWindow){
 /*  */
 
 /* add evento ao btn menu mobile */
-btnMenuMobile.pegarElemento().addEventListener('click', addClasse)
+if(btnMenuMobile.pegarElemento() !== null){
+    btnMenuMobile.pegarElemento().addEventListener('click', addClasse)
+}
 
 function addClasse(){
     listaMenu.criarClasse()
@@ -80,9 +82,11 @@ function clonarEl(){
 /* add o html do btn menu mobile dentro do li clonado */
 
 function addElemento(){
-    const pegarHtmlBtnTema = cabecalhoBloco.pegarElemento().removeChild(btnTema.pegarElemento()).outerHTML
-    
-    listaMenu.pegarElemento().appendChild(clonarEl()).innerHTML = pegarHtmlBtnTema
+    if(listaMenu.pegarElemento().querySelector('.cabecalho__btn--tema') === null){
+        const pegarHtmlBtnTema = cabecalhoBloco.pegarElemento().removeChild(btnTema.pegarElemento()).outerHTML
+        
+        listaMenu.pegarElemento().appendChild(clonarEl()).innerHTML = pegarHtmlBtnTema
+    }
 }
 
 /*  */

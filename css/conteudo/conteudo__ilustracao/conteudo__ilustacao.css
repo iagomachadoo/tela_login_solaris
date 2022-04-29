@@ -13,3 +13,17 @@
     margin: auto;
     max-width: 60ch;
 }
+
+@media(max-width: 800px){
+    .conteudo__ilustracao{
+        grid-row: 1;
+    }
+
+    .conteudo__img{
+        margin-top: 20px;
+    }
+
+    .conteudo__texto{
+        display: none;
+    }
+}
