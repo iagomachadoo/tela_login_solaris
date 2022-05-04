@@ -16,7 +16,7 @@
     <script src="js/mostrar_senha.js" defer></script>
     <script src="js/tema_escuro.js" defer></script>
 </head>
-<body>
+<body class="body">
     <header class="cabecalho">
         <div class="cabecalho__bloco">
             <p class="cabecalho__marca fonte-l cor-p6">solaris<span class="cabecalho__detalhe cor-p5">.</span></p>
@@ -38,27 +38,25 @@
     <main class="conteudo">
         <div class="conteudo__info">
             <form action="" class="conteudo__form">
-                <h1 class="conteudo__titulo fonte-l cor-p6">Log in<span class="cor-p5">.</span></h1>
+                <h1 class="conteudo__titulo fonte-l cor-p6">Log in<span class="conteudo__detalhe cor-p5">.</span></h1>
 
                 <h2 class="conteudo__subtitulo fonte-m cor-p6">Bem vindos a Solaris. Por favor, entre com suas informações de login.</h2>
 
-                <button class="conteudo__login--google fonte-s-a cor-p6"><img src="./assets/img_ot/icones/google-padrão.svg" alt="ícone do google" class="conteudo__login--img">Log in com o <span class="fonte-s cor-p5">Google</span></button>
+                <button class="conteudo__login--google fonte-s-a cor-p6"><img src="./assets/img_ot/icones/google-padrão.svg" alt="ícone do google" class="conteudo__login--img">Log in com o <span class="conteudo__login--detalhe fonte-s cor-p5">Google</span></button>
 
                 <div class="conteudo__email">
-                    <label for="email" class="conteudo__label fonte-s-a cor-p6">Email<span class="cor-p5">*</span></label>
+                    <label for="email" class="conteudo__label fonte-s-a cor-p6">Email<span class="conteudo__label-detalhe cor-p5">*</span></label>
 
                     <input type="email" name="email" id="email" class="conteudo__input fonte-s-a cor-p6">
                 </div>
 
                 <div class="conteudo__senha">
-                    <label for="senha" class="conteudo__label fonte-s-a cor-p6">Senha<span class="cor-p5">*</span></label>
+                    <label for="senha" class="conteudo__label fonte-s-a cor-p6">Senha<span class="conteudo__label-detalhe cor-p5">*</span></label>
 
                     <div class="conteudo__block-senha is-focus">
                         <input type="password" name="senha" id="senha" class="conteudo__input-senha fonte-s-a cor-p6">
 
-                        <span class="conteudo__block-img">
-                            <img src="./assets/img_ot/icones/eye-slash-fill.svg" class="conteudo__input-img" alt="">
-                        </span>
+                        <img src="./assets/img_ot/icones/eye-slash-fill.svg" class="conteudo__input-img" alt="">
                     </div>
                 </div>
 
@@ -69,12 +67,12 @@
                         <label for="lembrar-senha" class="conteudo__label fonte-xs-a cor-p6">Lembrar de mim</label>
                     </div>
 
-                    <a href="http://#" target="_blank" rel="noopener noreferrer" class="conteudo__recuperar--senha fonte-xs-a cor-p6">Esqueceu a <span class="fonte-xs cor-p5">senha</span>?</a>
+                    <a href="http://#" target="_blank" rel="noopener noreferrer" class="conteudo__recuperar--senha fonte-xs-a cor-p6">Esqueceu a <span class="conteudo__recuperar--senha-detalhe fonte-xs cor-p5">senha?</span></a>
                 </div>
 
                 <button class="conteudo__btn fonte-s cor-p6">Log in</button>
 
-                <a href="http://#" target="_blank" rel="noopener noreferrer" class="conteudo__nova--conta fonte-xs-a cor-p6">Não tem uma conta ainda? <span class="fonte-xs cor-p5">Crie sua conta.</span></a>
+                <a href="http://#" target="_blank" rel="noopener noreferrer" class="conteudo__nova--conta fonte-xs-a cor-p6">Não tem uma conta ainda? <span class="conteudo__nova--conta--detalhe fonte-xs cor-p5">Crie sua conta.</span></a>
             </form>
         </div>
 

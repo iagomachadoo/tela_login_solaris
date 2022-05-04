@@ -1,0 +1,55 @@
+/* header */
+.is-black .cabecalho{
+    background-color: var(--cor-s4);
+}
+
+.is-black .cabecalho__marca,
+.is-black .conteudo__titulo{
+    color: var(--cor-s1);
+}
+
+.is-black .cabecalho__detalhe,
+.is-black .conteudo__detalhe,
+.is-black .conteudo__login--detalhe,
+.is-black .conteudo__label-detalhe,
+.is-black .conteudo__recuperar--senha-detalhe,
+.is-black .conteudo__nova--conta--detalhe{
+    color: var(--cor-p1);
+}
+
+.is-black .cabelho__link,
+.is-black .conteudo__subtitulo,
+.is-black .conteudo__label,
+.is-black .conteudo__recuperar--senha,
+.is-black .conteudo__nova--conta,
+.is-black .conteudo__texto{
+    color: var(--cor-s2);
+}
+
+.is-black .cabecalho__btn--tema{
+    color: var(--cor-s1);
+}
+
+.is-black .cabecalho__btn--tema--before::before{
+    background-image: url("../../assets/img_ot/icones/icone_dark/sun-fill-dark.svg");
+}
+
+.is-black .conteudo{
+    background-color: var(--cor-s6);
+}
+
+.is-black .conteudo__form{
+    background-color: var(--cor-s5);
+    border: 1px solid var(--cor-p3);
+}
+
+.is-black .conteudo__login--google,
+.is-black .conteudo__btn{
+    background-color: var(--cor-s3);
+    border: 1px solid var(--cor-p3);
+    color: var(--cor-s1);
+}
+
+.is-black .conteudo__ilustracao{
+    background-color: var(--cor-s5);
+}

@@ -5,23 +5,6 @@ function pegarElemento(el){
     return elemento
 }
 
-/* function addClasse(el, classe){
-    el.classList.add(classe)
-}
-
-function removerClasse(el, classe){
-    const cabecalho = pegarElemento('.cabecalho')
-
-    const cabecalhoContemClasseIsBlack = cabecalho.classList.contains('is-black')
-    
-
-    if(cabecalhoContemClasseIsBlack){
-        el.classList.remove(classe)
-    }else{
-        addClasse()
-    }
-} */
-
 function toggleClasse(el, classe){
     el.classList.toggle(classe)
 }
@@ -29,34 +12,27 @@ function toggleClasse(el, classe){
 const btnMudarTema = pegarElemento('.cabecalho__btn--tema')
 
 btnMudarTema.addEventListener('click', mudarTema)
+btnMudarTema.addEventListener('touchstart', mudarTema)
 
-function mudarTema(){
-    const cabecalho = pegarElemento('.cabecalho')
+function mudarTema(evento){
+    if(evento.type === 'touchstart') {
+        evento.preventDefault()
+    }
+    
+    const body = pegarElemento('.body')
 
-    /* const cabecalhoMarca = pegarElemento('.cabecalho__marca')
+    const imgBtnLoginGoogle = pegarElemento('.conteudo__login--img')
 
-    const cabecalhoMarcaSpan = pegarElemento('.cabecalho__detalhe')
-
-    const cabecalhoLista = pegarElemento('.cabecalho__lista')
- */
-    toggleClasse(cabecalho, 'is-black')
+    toggleClasse(body, 'is-black')
 
     if(btnMudarTema.innerText === 'modo escuro'){
         btnMudarTema.innerText = 'modo claro'
-        
+
+        imgBtnLoginGoogle.src = "./assets/img_ot/icones/icone_dark/google-dark.svg"
+
     }else{
         btnMudarTema.innerText = 'modo escuro'
+
+        imgBtnLoginGoogle.src = "./assets/img_ot/icones/google-padrão.svg"
     }
-
-    
-    /*addClasse(cabecalhoMarca, 'cor-p6')
-    removerClasse(cabecalhoMarca, 'cor-p6')
-
-    
-     addClasse(cabecalhoMarcaSpan, 'cor-p5')
-    removerClasse(cabecalhoMarcaSpan, 'cor-p5') 
-
-    
-     addClasse(cabecalhoLista, 'cor-p6')
-    removerClasse(cabecalhoLista, 'cor-p6') */
 }

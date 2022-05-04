@@ -8,3 +8,5 @@
 @import "./conteudo/conteudo.css";
 @import "./conteudo/conteudo__info/conteudo__info.css";
 @import "./conteudo/conteudo__ilustracao/conteudo__ilustacao.css";
+
+@import './dark_mode/dark_mode.css';
